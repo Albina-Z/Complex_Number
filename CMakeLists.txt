@@ -12,9 +12,3 @@ add_executable(untitled24 main.cpp CompNumber.cpp CompNumber.h)
 add_executable(tests tests.cpp ${SOURCE_FILES})
 target_include_directories(tests PRIVATE googletest/googletest/include PRIVATE source)
 target_link_libraries(tests gtest)
-
-
-
-
-
-
