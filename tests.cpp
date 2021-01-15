@@ -16,8 +16,8 @@ TEST(ComplexNumber, test2)
     Complex_Number number2 = {45, 7};
     Complex_Number expected = number1 - number2;
 
-    EXPECT_DOUBLE_EQ(expected.real_part, -39);
-    EXPECT_DOUBLE_EQ(expected.imaginary_part, 39);
+    EXPECT_FLOAT_EQ(expected.real_part, -39);
+    EXPECT_FLOAT_EQ(expected.imaginary_part, 39);
 
 }
 TEST(ComplexNumber, test3)
@@ -34,8 +34,8 @@ TEST(ComplexNumber, test4)
     Complex_Number number1 = {10, 5};
     Complex_Number number2 = {2, 4};
     Complex_Number expected = number1/number2;
-    EXPECT_DOUBLE_EQ(expected.real_part, 2);
-    EXPECT_DOUBLE_EQ(expected.imaginary_part, -1.5);
+    EXPECT_FLOAT_EQ(expected.real_part, 2);
+    EXPECT_FLOAT_EQ(expected.imaginary_part, -1.5);
 }
 
 TEST(ComplexNumber, test5)
